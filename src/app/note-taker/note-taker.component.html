@@ -1,0 +1,22 @@
+<div>
+  <mat-expansion-panel class="mat-style" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Note
+      </mat-panel-title>
+      <br />
+      <mat-panel-description>
+        Add a New Notes
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <input type="text" name="txttitle"  [(ngModel)]="note.title" placeholder="Eneter Note Tittle">
+    
+    <br />
+    <br />
+    <input type="text" name="txttext" [(ngModel)]="note.text" placeholder="Eneter Note Description">
+   
+    <br />
+    <br />
+    <button mat-raised-button color="primary" (click)="addNote()">Save</button>
+  </mat-expansion-panel>
+</div>
